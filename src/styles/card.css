@@ -1,0 +1,5 @@
+.card-catalog:nth-child(n+3) {
+  border-top: 1px solid #c4c4c4;
+}
+
+/*# sourceMappingURL=card.css.map */

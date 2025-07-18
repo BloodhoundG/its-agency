@@ -1,0 +1,24 @@
+.card-list__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 15px;
+  padding: 48px 0 0;
+}
+.card-list__sort {
+  margin-left: auto;
+}
+.card-list__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 15px;
+  grid-column: 1/-1;
+  padding: 24px 0 0;
+}
+.card-list__item {
+  background: red;
+}
+.card-list__item:nth-child(n+3) {
+  border-top: 1px solid #c4c4c4;
+}
+
+/*# sourceMappingURL=card-list.css.map */

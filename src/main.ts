@@ -1,0 +1,20 @@
+import './style.css';
+import './styles/index.scss';
+import './scripts/init-slider.ts';
+import { initSwiper } from './scripts/init-slider.ts';
+import { initCards } from './scripts/init-cards.ts';
+import { initFiltersModal } from './scripts/init-filters-modal.ts';
+import { initCardFilters } from './scripts/init-card-filters.ts';
+import { initFilterSort } from './scripts/init-filter-sort.ts';
+import { initBasketModal } from './scripts/init-basket-modal.ts';
+import { initMobileMenuModal } from './scripts/init-mobile-menu-modal.ts';
+import { initSidebarFilters } from './scripts/init-sidebar-filters.ts';
+
+initCards();
+initFiltersModal();
+initCardFilters();
+initFilterSort();
+initBasketModal();
+initMobileMenuModal();
+initSidebarFilters();
+initSwiper('.my-swiper');

@@ -1,0 +1,138 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 0;
+        border-bottom: 1px solid #f2f2f2;
+
+        @media (min-width: 1920px) {
+            justify-content: left;
+        }
+    }
+
+    &__logo-wrapper {
+        order: 1;
+
+        @media (min-width: 1920px) {
+            order: 0;
+        }
+    }
+
+    &__navigation-menu {
+        order: 0;
+
+        @media (min-width: 1920px) {
+            padding: 0 0 0 170px;
+        }
+    }
+
+    &__burger-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 14px;
+
+        @media (min-width: 1920px) {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 24px;
+            height: 2px;
+            background: #000;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 24px;
+            height: 2px;
+            background: #000;
+        }
+    }
+
+    &__navigation {
+        display: none;
+
+        @media (min-width: 1920px) {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+    &__navigation-item {
+        @media (min-width: 1920px) {
+            text-decoration: none;
+            color: #1f2020;
+            font-size: 14px;
+        }
+    }
+
+    &__burger-button-line {
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background: #000;
+    }
+
+    &__phone {
+        display: none;
+
+        @media (min-width: 1920px) {
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    &__phone-link {
+        color: #1f2020;
+        text-decoration: none;
+    }
+
+    &__phone-description {
+        color: rgba(31, 32, 32, 0.3);
+    }
+
+    &__controls {
+        order: 2;
+
+        @media (min-width: 1920px) {
+            display: flex;
+            gap: 24px;
+            padding: 0 0 0 116px;
+        }
+    }
+
+    &__control-search,
+    &__control-profile,
+    &__control-favorites {
+        display: none;
+
+        @media (min-width: 1920px) {
+            flex-shrink: 0;
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &__control-basket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background: #7bb899;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: 500;
+
+        @media (min-width: 1920px) {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.card-list {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 48px 0 0;
+
+        @media (min-width: 1920px) {
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0 18px;
+        }
+    }
+
+    &__sidebar-filters {
+        display: none;
+
+        @media (min-width: 1920px) {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__filters {
+        @media (min-width: 1920px) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    }
+
+    &__counter {
+        display: none;
+
+        @media (min-width: 1920px) {
+            display: block;
+        }
+    }
+
+    &__filters-button {
+        font-size: 12px;
+        text-transform: uppercase;
+
+        @media (min-width: 1920px) {
+            display: none;
+        }
+    }
+
+    &__sort {
+        position: relative;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin-left: auto;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        @media (min-width: 1920px) {
+            grid-column: -1/-2;
+            grid-row: 1/2;
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 15px;
+        grid-column: 1/-1;
+        padding: 44px 0 0;
+
+        @media (min-width: 1920px) {
+            grid-column: 2/-1;
+            display: grid;
+            gap: 0 18px;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 0 0 140px;
+        }
+    }
+}

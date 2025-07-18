@@ -1,0 +1,36 @@
+.modal-sort-filter {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: max-content;
+    background: #fff;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &[is-open] {
+        opacity: 1;
+    }
+
+    &__sort-item {
+        padding: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        @media (min-width: 1920px) {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background: #7bb89980;
+            }
+        }
+
+        &.is-active {
+            background: #7bb899;
+        }
+    }
+}
